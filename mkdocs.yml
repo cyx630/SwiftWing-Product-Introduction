@@ -2,7 +2,7 @@ site_name: SwiftWing 产品介绍 文档
 
 site_description: SwiftWing 产品介绍 文档
 site_author: SwiftWing 团队
-site_url: https://swiftwing001.github.io/SwiftWing-Product-Introduction/
+site_url: https://swiftwing001.github.io/SwiftWing-Parts-Introduction/
 
 theme:
   name: readthedocs
@@ -10,8 +10,18 @@ theme:
 nav:
   - 主页: index.md
   - 产品介绍:
-    - P1无人机分电板: 0_P1无人机分电板.md
-    - 迅翼MS4525DO空速计: 1_迅翼MS4525DO空速计.md
+    - P1无人机分电板:
+      - 概述: 分电板/0_P1无人机分电板.md
+      - 使用说明: 分电板/使用说明.md
+    - 迅翼MS4525DO空速计:
+      - 概述: 空速/1_迅翼MS4525DO空速计.md
+      - 使用说明: 空速/使用说明.md
+    - 迅翼Mlrs:
+      - 概述: mlrs/迅翼Mlrs.md
+      - 使用说明: mlrs/使用说明.md
+    - 迅翼Elrs:
+      - 概述: elrs/迅翼Elrs.md
+      - 使用说明: elrs/使用说明.md
 
 
 # # 本地编译
