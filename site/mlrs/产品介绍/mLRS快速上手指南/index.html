@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="SwiftWing 团队" /><link rel="canonical" href="https://swiftwing001.github.io/SwiftWing-Parts-Introduction/mlrs/%E4%BA%A7%E5%93%81%E4%BB%8B%E7%BB%8D/mLRS%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/" />
+      <link rel="shortcut icon" href="../../../img/favicon.ico" />
+    <title>概述 - SwiftWing 产品介绍 文档</title>
+    <link rel="stylesheet" href="../../../css/theme.css" />
+    <link rel="stylesheet" href="../../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "\u6982\u8ff0";
+        var mkdocs_page_input_path = "mlrs\\\u4ea7\u54c1\u4ecb\u7ecd\\mLRS\u5feb\u901f\u4e0a\u624b\u6307\u5357.md";
+        var mkdocs_page_url = "/SwiftWing-Parts-Introduction/mlrs/%E4%BA%A7%E5%93%81%E4%BB%8B%E7%BB%8D/mLRS%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B%E6%8C%87%E5%8D%97/";
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../../.." class="icon icon-home"> SwiftWing 产品介绍 文档
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../..">主页</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">产品介绍</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" >P1无人机分电板</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../%E5%88%86%E7%94%B5%E6%9D%BF/0_P1%E6%97%A0%E4%BA%BA%E6%9C%BA%E5%88%86%E7%94%B5%E6%9D%BF/">概述</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../%E5%88%86%E7%94%B5%E6%9D%BF/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/">使用说明</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >迅翼MS4525DO空速计</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../%E7%A9%BA%E9%80%9F/1_%E8%BF%85%E7%BF%BCMS4525DO%E7%A9%BA%E9%80%9F%E8%AE%A1/">概述</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../%E7%A9%BA%E9%80%9F/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/">使用说明</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" >迅翼Mlrs</a>
+    <ul class="current">
+                <li class="toctree-l2 current"><a class="reference internal current" href="#">概述</a>
+    <ul class="current">
+    <li class="toctree-l3"><a class="reference internal" href="#mlrs_1">什么是 mLRS</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#_1">核心特点</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_2">快速导航</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#1">1. 硬件功能</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#2">2. 参数配置</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#3">3. 飞控连接</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_3">完整配置流程</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#faq">常见问题（FAQ）</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#q1tx-rx">Q1：Tx 和 Rx 无法绑定怎么办？</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#q2">Q2：为什么我看不到遥测数据？</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#q3rc">Q3：RC 通道没有信号怎么办？</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#q4">Q4：如何恢复出厂设置？</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#q5">Q5：为什么参数修改后重启就失效了？</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#q6">Q6：可以使用哪些频段？</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#q7">Q7：如何选择合适的功率设置？</a>
+    </li>
+    <li class="toctree-l4"><a class="reference internal" href="#q8">Q8：地面站连接失败怎么办？</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#_4">飞行前检查</a>
+    </li>
+    </ul>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../%E7%A1%AC%E4%BB%B6%E5%8A%9F%E8%83%BD/">硬件功能</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../mLRS%E6%9F%A5%E7%9C%8B%E5%8F%8A%E6%9B%B4%E6%94%B9%E5%8F%82%E6%95%B0/">查看及更改参数</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../mLRS%E8%BF%9E%E6%8E%A5%E9%A3%9E%E6%8E%A7%E4%BD%BF%E7%94%A8/">连接飞控使用</a>
+                </li>
+    </ul>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" >迅翼Elrs</a>
+    <ul>
+                <li class="toctree-l2"><a class="reference internal" href="../../../elrs/elrs%E6%8E%A5%E6%94%B6%E6%9C%BA%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/">快速上手</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../elrs/%E7%A1%AC%E4%BB%B6%E6%8E%A5%E5%8F%A3%E4%BB%8B%E7%BB%8D/">硬件接口介绍</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../elrs/%E5%9B%BA%E4%BB%B6%E5%88%B7%E5%86%99/">固件刷写</a>
+                </li>
+                <li class="toctree-l2"><a class="reference internal" href="../../../elrs/%E9%A3%9E%E6%8E%A7%E9%85%8D%E7%BD%AE/">飞控配置</a>
+                </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../..">SwiftWing 产品介绍 文档</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">产品介绍</li>
+          <li class="breadcrumb-item">迅翼Mlrs</li>
+      <li class="breadcrumb-item active">概述</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="mlrs">mLRS 快速上手指南</h1>
+<p>欢迎使用 mLRS（micro Long Range System）！本指南是所有文档的总览入口，帮助您快速了解 mLRS 系统并导航到详细文档。</p>
+<hr />
+<h2 id="mlrs_1">什么是 mLRS</h2>
+<p>mLRS 是一款<strong>"数遥一体"</strong>的开源遥控协议，将遥控功能和数传功能整合到同一条链路中。</p>
+<h3 id="_1">核心特点</h3>
+<table>
+<thead>
+<tr>
+<th>特点</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>数遥一体</strong></td>
+<td>遥控和数传共用一条链路，设备更精简</td>
+</tr>
+<tr>
+<td><strong>双向通信</strong></td>
+<td>同时支持控制指令下发和遥测数据回传</td>
+</tr>
+<tr>
+<td><strong>蓝牙输出</strong></td>
+<td>高频头内置蓝牙，可直接连接手机 APP</td>
+</tr>
+<tr>
+<td><strong>参数丰富</strong></td>
+<td>支持完整的 MAVLink 遥测数据传输</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="_2">快速导航</h2>
+<h3 id="1">1. 硬件功能</h3>
+<p>了解 mLRS 模块的硬件接口和射频芯片特性。</p>
+<ul>
+<li><strong>对频方法</strong>：自动对频与手动对频操作</li>
+<li><strong>LED 状态指示</strong>：识别不同的连接状态</li>
+<li><strong>接口说明</strong>：SWD 调试接口、串口接口等</li>
+<li><strong>射频芯片</strong>：E77-900M22S（915MHz）和 E28-2G4M27SX（2.4GHz）</li>
+</ul>
+<p>👉 <strong>详细文档</strong>：<a href="../%E7%A1%AC%E4%BB%B6%E5%8A%9F%E8%83%BD/">硬件功能.md</a></p>
+<h3 id="2">2. 参数配置</h3>
+<p>通过串口终端查看和修改 mLRS 参数。</p>
+<ul>
+<li><strong>所需材料</strong>：USB-TTL 适配器、杜邦线、电源、串口终端软件</li>
+<li><strong>常用指令</strong>：查看参数 <code>pl;</code>、修改参数 <code>p 参数名 = 值;</code>、保存参数 <code>pstore;</code></li>
+<li><strong>Tx 模块参数</strong>：发射功率、分集模式、通道输入源等</li>
+<li><strong>Rx 接收器参数</strong>：输出模式、串口波特率、链路模式等</li>
+</ul>
+<p>👉 <strong>详细文档</strong>：<a href="../mLRS%E6%9F%A5%E7%9C%8B%E5%8F%8A%E6%9B%B4%E6%94%B9%E5%8F%82%E6%95%B0/">mLRS查看及更改参数.md</a></p>
+<h3 id="3">3. 飞控连接</h3>
+<p>将 mLRS 接收器连接到飞控并完成配置。</p>
+<ul>
+<li><strong>硬件连接</strong>：MAVLink 串口连接、CRSF RC 输出连接</li>
+<li><strong>遥控器设置</strong>：EdgeTX/OpenTX 的 CRSF 协议配置</li>
+<li><strong>mLRS 配置</strong>：Tx 模块和接收器的参数配置</li>
+<li><strong>飞控配置</strong>：PX4 的 MAVLink 串口配置和流速率设置</li>
+<li><strong>地面站连接</strong>：蓝牙、WiFi 或 USB 连接方式</li>
+</ul>
+<p>👉 <strong>详细文档</strong>：<a href="../mLRS%E8%BF%9E%E6%8E%A5%E9%A3%9E%E6%8E%A7%E4%BD%BF%E7%94%A8/">mLRS连接飞控使用.md</a></p>
+<hr />
+<h2 id="_3">完整配置流程</h2>
+<pre><code>1. 硬件准备
+       ↓
+2. 对频绑定（参考 硬件功能.md）
+       ↓
+3. 参数配置（参考 mLRS查看及更改参数.md）
+       ↓
+4. 飞控连接（参考 mLRS连接飞控使用.md）
+       ↓
+5. 测试验证
+       ↓
+6. 安全飞行
+</code></pre>
+<hr />
+<h2 id="faq">常见问题（FAQ）</h2>
+<h3 id="q1tx-rx">Q1：Tx 和 Rx 无法绑定怎么办？</h3>
+<p><strong>A</strong>：请按照以下步骤排查：
+1. 确保两者都已上电并进入绑定模式
+2. 检查电源是否稳定（推荐使用 5V 2A 以上电源）
+3. 确保固件版本一致
+4. 尝试更换绑定 phrase（默认是 'mlrs.0'）</p>
+<h3 id="q2">Q2：为什么我看不到遥测数据？</h3>
+<p><strong>A</strong>：请检查以下设置：
+1. 确认 <code>Rx Snd RadioStat</code> 参数设置为 <code>ardu_1</code> 或 <code>meth_b</code>
+2. 确认飞控串口配置正确（MAV_x_RADIO = 1）
+3. 检查串口接线是否正确（交叉连接：Tx→RX，RX→Tx）
+4. 确认波特率设置匹配</p>
+<h3 id="q3rc">Q3：RC 通道没有信号怎么办？</h3>
+<p><strong>A</strong>：可能的原因：
+1. 遥控器协议设置错误（应设置为 CRSF，波特率 400K）
+2. <code>Tx Ch Source</code> 参数未设置为 <code>crsf</code>
+3. 接收器输出模式未正确配置
+4. 飞控 RC 协议未设置为 CRSF（RC_PROTOCOLS = 1）</p>
+<h3 id="q4">Q4：如何恢复出厂设置？</h3>
+<p><strong>A</strong>：在终端中执行以下命令：</p>
+<pre><code class="language-bash">p factory_reset;
+pstore;
+reload;
+</code></pre>
+<h3 id="q5">Q5：为什么参数修改后重启就失效了？</h3>
+<p><strong>A</strong>：修改参数后必须执行 <code>pstore;</code> 命令保存配置，否则重启后会恢复到之前的设置。</p>
+<h3 id="q6">Q6：可以使用哪些频段？</h3>
+<p><strong>A</strong>：mLRS 支持多个频段：
+- <strong>868 MHz</strong>：欧洲常用频段
+- <strong>915 MHz</strong>：北美常用频段
+- <strong>2.4 GHz</strong>：全球通用频段（与 WiFi 同频段，可能有干扰）</p>
+<h3 id="q7">Q7：如何选择合适的功率设置？</h3>
+<p><strong>A</strong>：根据飞行距离和法规要求选择：
+- <strong>低功率（10-100 mW）</strong>：近距离飞行，合规性好
+- <strong>中功率（250-500 mW）</strong>：中等距离，适合大多数场景
+- <strong>高功率（1W+）</strong>：远距离飞行，需注意当地法规限制</p>
+<h3 id="q8">Q8：地面站连接失败怎么办？</h3>
+<p><strong>A</strong>：请检查：
+1. 串口选择是否正确
+2. 波特率设置是否匹配
+3. 飞控 MAVLink 协议是否设置为 v2（MAV_x_PROTOCOL = 2）
+4. 确保没有其他软件占用该串口</p>
+<hr />
+<h2 id="_4">飞行前检查</h2>
+<table>
+<thead>
+<tr>
+<th>检查项</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>🔋 电池</td>
+<td>电量充足，连接牢固</td>
+</tr>
+<tr>
+<td>📡 信号</td>
+<td>Tx/Rx 连接正常（LED 指示）</td>
+</tr>
+<tr>
+<td>🎛️ 通道</td>
+<td>所有 RC 通道响应正常</td>
+</tr>
+<tr>
+<td>📊 遥测</td>
+<td>遥测数据显示正常</td>
+</tr>
+<tr>
+<td>🔒 失效保护</td>
+<td>已配置并测试</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<p><strong>文档结构说明</strong>：
+- <strong>mLRS快速上手指南.md</strong>（本文件）：总览入口，提供导航链接
+- <strong>硬件功能.md</strong>：硬件接口和射频芯片的详细说明
+- <strong>mLRS查看及更改参数.md</strong>：参数配置的详细操作步骤
+- <strong>mLRS连接飞控使用.md</strong>：飞控连接和配置的完整指南</p>
+<p>通过点击上方的文档链接，可以跳转到相应的详细文档。</p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../../../%E7%A9%BA%E9%80%9F/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" class="btn btn-neutral float-left" title="使用说明"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../%E7%A1%AC%E4%BB%B6%E5%8A%9F%E8%83%BD/" class="btn btn-neutral float-right" title="硬件功能">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../../../%E7%A9%BA%E9%80%9F/%E4%BD%BF%E7%94%A8%E8%AF%B4%E6%98%8E/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../%E7%A1%AC%E4%BB%B6%E5%8A%9F%E8%83%BD/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../../..";</script>
+    <script src="../../../js/theme_extra.js"></script>
+    <script src="../../../js/theme.js"></script>
+      <script src="../../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

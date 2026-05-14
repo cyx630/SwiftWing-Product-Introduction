@@ -17,16 +17,15 @@ nav:
       - 概述: 空速/1_迅翼MS4525DO空速计.md
       - 使用说明: 空速/使用说明.md
     - 迅翼Mlrs:
-      - 概述: mlrs/mLRS快速上手指南.md
-      - 硬件功能: mlrs/硬件功能.md
-      - 查看及更改参数: mlrs/mLRS查看及更改参数.md
-      - 连接飞控使用: mlrs/mLRS连接飞控使用.md
+      - 概述: mlrs/产品介绍/mLRS快速上手指南.md
+      - 硬件功能: mlrs/产品介绍/硬件功能.md
+      - 查看及更改参数: mlrs/产品介绍/mLRS查看及更改参数.md
+      - 连接飞控使用: mlrs/产品介绍/mLRS连接飞控使用.md
     - 迅翼Elrs:
-      - 概述: elrs/elrs接收机产品介绍.md
-      - 使用说明: elrs/elrs快速上手.md
-      - 硬件接口介绍: elrs/elrs硬件接口介绍.md
-      - 固件刷写: elrs/elrs固件刷写.md
-      - 飞控配置: elrs/elrs飞控配置.md
+      - 快速上手: elrs/elrs接收机快速上手.md
+      - 硬件接口介绍: elrs/硬件接口介绍.md
+      - 固件刷写: elrs/固件刷写.md
+      - 飞控配置: elrs/飞控配置.md
       
 
 
@@ -40,3 +39,8 @@ nav:
 # git push origin master
 # # 部署到 GitHub Pages
 # mkdocs gh-deploy
+# python -m mkdocs build
+# python -m mkdocs serve -a 0.0.0.0:8080
+# python -m mkdocs serve -a 192.168.31.42:8080
+# 192.168.31.42:8080
+# 127.0.0.1:8080
