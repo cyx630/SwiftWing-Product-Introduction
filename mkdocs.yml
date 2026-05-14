@@ -17,11 +17,17 @@ nav:
       - 概述: 空速/1_迅翼MS4525DO空速计.md
       - 使用说明: 空速/使用说明.md
     - 迅翼Mlrs:
-      - 概述: mlrs/迅翼Mlrs.md
-      - 使用说明: mlrs/使用说明.md
+      - 概述: mlrs/mLRS快速上手指南.md
+      - 硬件功能: mlrs/硬件功能.md
+      - 查看及更改参数: mlrs/mLRS查看及更改参数.md
+      - 连接飞控使用: mlrs/mLRS连接飞控使用.md
     - 迅翼Elrs:
-      - 概述: elrs/迅翼Elrs.md
-      - 使用说明: elrs/使用说明.md
+      - 概述: elrs/elrs接收机产品介绍.md
+      - 使用说明: elrs/elrs快速上手.md
+      - 硬件接口介绍: elrs/elrs硬件接口介绍.md
+      - 固件刷写: elrs/elrs固件刷写.md
+      - 飞控配置: elrs/elrs飞控配置.md
+      
 
 
 # # 本地编译
