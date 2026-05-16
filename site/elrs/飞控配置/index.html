@@ -115,17 +115,17 @@
               
                 <h3 id="_1">飞控配置</h3>
 <h1 id="betaflight">Betaflight配置</h1>
+<p>ELRS接收器与 FC 板的连接如下图所示</p>
+<p><img alt="1778812428964" src="../image/%E9%A3%9E%E6%8E%A7%E9%85%8D%E7%BD%AE/1778812428964.png" /></p>
 <ol>
 <li>打开Betaflight Configurator</li>
-<li>进入"Receiver"选项卡</li>
-<li>设置"Receiver Mode"为：</li>
-<li>SBUS输出：选择SBUS</li>
-<li>CRSF输出：选择CRSF</li>
-<li>配置UART端口（如使用CRSF）：</li>
-<li>进入"Ports"选项卡</li>
-<li>设置对应UART为"Serial RX"</li>
-<li>点击"Save and Reboot"</li>
+<li>进在 Betaflight 配置器 “端口” 选项卡上启用相应的 UART（例如下面的 UART3）作为串行 Rx。</li>
 </ol>
+<p><img alt="1778812479071" src="../image/%E9%A3%9E%E6%8E%A7%E9%85%8D%E7%BD%AE/1778812479071.png" /></p>
+<ol>
+<li>在“配置”选项卡上，在“接收器”面板上选择“基于串行的接收器”，然后选择“CRSF”作为协议。遥测在这里是可选的，并且由于那些用于遥测的传输时隙会降低您的棒更新率。</li>
+</ol>
+<p><img alt="1778812610424" src="../image/%E9%A3%9E%E6%8E%A7%E9%85%8D%E7%BD%AE/1778812610424.png" /></p>
 <h2 id="ardupilot-apm">ArduPilot (APM) 配置</h2>
 <ol>
 <li>连接飞控并打开Mission Planner</li>
